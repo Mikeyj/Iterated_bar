@@ -25,7 +25,8 @@ colnames(otu.perc)=colnames(otu) totals<-colSums(otu)
 
 for(s in c(1:s_num)){
 vec<-(otu[,s]/totals[s])*100
-otu.perc[,s]<-vec# rm(vec)
+otu.perc[,s]<-vec
+rm(vec)
 }
 
 write.table(otu.perc, "otu_perc.txt", col.names = NA, row.names = T, sep = "\t")
