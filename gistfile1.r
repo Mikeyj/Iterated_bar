@@ -18,7 +18,7 @@ colnames(otu.20.melt)[1] = "OTU"
 colnames(otu.20.melt)[2] = "Sample"
 colnames(otu.20.melt)[3] = "Abundance"
 
-#Subselect and use percent abundance instead
+#As an alternative use percent abundance and then subselect the top 20 most abundant OTUs
 s_num<-dim(otu)[2]
 otu.perc<-matrix(rep("NA",times=(dim(otu)[1]*s_num)),nrow=dim(otu)[1],ncol=s_num)
 rownames(otu.perc)<-rownames(otu)
