@@ -1,6 +1,6 @@
 #Install packages, load them and get your workspace lined up
 setwd("/home/me/sexyplots") 
-install.pacakges(c("ggplot2", "stringr", "reshape2", "grid")
+install.packages(c("ggplot2", "stringr", "reshape2", "grid")
 library(c("ggplot2", "stringr", "reshape2", "grid")
 
 #Read in the OTU table and improve naming
